@@ -1,0 +1,13 @@
+<ul>
+  <li>
+    <a (click)='displayJokes()'>
+      All
+    </a>
+  </li>
+  <li *ngFor="let category of categories?.value">
+    <a (click)="displayJokes(category)">
+      {{category}}
+    </a>
+  </li>
+</ul>
+<app-chuck-norris-jokes></app-chuck-norris-jokes>

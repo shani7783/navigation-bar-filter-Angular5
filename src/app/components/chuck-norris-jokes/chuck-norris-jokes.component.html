@@ -1,0 +1,12 @@
+
+<div class="numOfJokes">
+    <span>Number of jokes to display:</span>
+    <select [(ngModel)]="selectedNumberOfJokes" (change)="onNumberOfDisplayChanged()">
+      <option *ngFor="let i of MAX_JOKES_TO_DISPLAY">{{i}}</option>
+    </select>
+  </div>
+<div *ngIf="chuckNorrisJokes">  
+  <ul>
+    <li *ngFor="let joke of chuckNorrisJokes"><div class="smiley">:-)</div><span> {{joke.joke}}</span></li>
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;    
+}
+
+ul li {
+    padding-top: 10px;    
+}
+
+.smiley {
+    width: 16px;
+    height: 17px;    
+    color: black;
+    font-weight: bold;
+    margin-right:5px;
+    border-radius: 3px;
+    float: left;
+}
+
+.numOfJokes {
+    color: darkblue;
+    margin-left: 16px;
+}
